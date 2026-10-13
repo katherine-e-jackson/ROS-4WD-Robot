@@ -1,0 +1,6 @@
+-Wno-frame-address
+-mlongcalls
+-fno-builtin-memcpy
+-fno-builtin-memset
+-fno-builtin-bzero
+"-specs=/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/specs/picolibc.specs"

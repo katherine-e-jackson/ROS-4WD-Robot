@@ -1,0 +1,2 @@
+source /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/bootloader/gdbinit/symbols
+source /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/bootloader/gdbinit/connect

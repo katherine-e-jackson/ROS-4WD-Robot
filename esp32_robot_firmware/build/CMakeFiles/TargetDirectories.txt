@@ -1174,3 +1174,10 @@
 /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/main/CMakeFiles/install.dir
 /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/main/CMakeFiles/install/local.dir
 /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/main/CMakeFiles/install/strip.dir
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/CMakeFiles/__idf_motor_control.dir
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/CMakeFiles/edit_cache.dir
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/CMakeFiles/rebuild_cache.dir
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/CMakeFiles/list_install_components.dir
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/CMakeFiles/install.dir
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/CMakeFiles/install/local.dir
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/CMakeFiles/install/strip.dir

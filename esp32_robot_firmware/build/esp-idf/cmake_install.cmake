@@ -757,6 +757,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/main/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

@@ -200,3 +200,5 @@
 /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/rt/librt.a
 /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/spiffs/libspiffs.a
 /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/main/libmain.a
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/libmotor_control.a
+/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a

@@ -1,7 +1,7 @@
 {
     "version":            "1.3",
     "project_name":       "esp32_robot_firmware",
-    "project_version":    "d7f1cd6-dirty",
+    "project_version":    "4dbb49d-dirty",
     "project_path":       "/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware",
     "idf_path":           "/Users/katherinejackson/.espressif/v6.1/esp-idf",
     "build_dir":          "/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build",

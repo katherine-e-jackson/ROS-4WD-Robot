@@ -10,10 +10,10 @@ extern "C" {
 /* Left Driver (Driver A)  -> Back-Left (2), Front-Left (0)
    Right Driver (Driver B) -> Back-Right (3), Front-Right (1) */
 typedef enum {
-    WHEEL_BACK_LEFT   = 2,
     WHEEL_FRONT_LEFT  = 0,
-    WHEEL_BACK_RIGHT  = 3,
     WHEEL_FRONT_RIGHT = 1,
+    WHEEL_BACK_LEFT   = 2,
+    WHEEL_BACK_RIGHT  = 3,
     WHEEL_COUNT       = 4
 } wheel_id_t;
 

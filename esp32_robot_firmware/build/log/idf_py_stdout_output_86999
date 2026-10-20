@@ -1,0 +1,51 @@
+Command: ninja flash
+[1/5] cd /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build && /Users/katherinejackson/.espressif/python_env/idf6.1_py3.12_env/bin/python /Users/katherinejackson/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/partition_table/partition-table.bin /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp32_robot_firmware.bin
+esp32_robot_firmware.bin binary size 0x6f280 bytes. Smallest app partition is 0x100000 bytes. 0x90d80 bytes (57%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/bootloader && /Users/katherinejackson/.espressif/python_env/idf6.1_py3.12_env/bin/python /Users/katherinejackson/.espressif/v6.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/bootloader/bootloader.bin
+Bootloader binary size 0x6640 bytes. 0x9c0 bytes (9%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] Running utility command for flash
+esptool --chip esp32 -p /dev/cu.usbserial-0001 -b 460800 --before=default-reset --after=hard-reset write-flash --flash-mode dio --flash-freq 40m --flash-size 4MB 0x1000 bootloader/bootloader.bin 0x8000 partition_table/partition-table.bin 0x10000 esp32_robot_firmware.bin --skip-flashed
+esptool v5.5.0
+Serial port /dev/cu.usbserial-0001:
+Connecting.....
+[1A[2K[1A[2KConnected to ESP32 on /dev/cu.usbserial-0001:
+Chip type:          ESP32-D0WD-V3 (revision v3.1)
+Features:           Wi-Fi, BT, Dual Core + LP Core, 240MHz, Vref calibration in eFuse, Coding Scheme None
+Crystal frequency:  40MHz
+MAC:                68:09:47:76:fd:84
+
+Uploading stub flasher...
+Running stub flasher...
+[1A[2K[1A[2KStub flasher running.
+Changing baud rate to 460800...
+Changed.
+
+Configuring flash size...
+
+Writing 'bootloader/bootloader.bin' at 0x00001000...
+SHA digest in image updated.
+Comparing flash contents against new data...
+[1A[2KFlash will be erased from 0x00001000 to 0x00007fff...
+Compressed 26176 bytes to 16586...
+[2KWriting at 0x00007530 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m  98.8% 16.00kB/16.20kB [0s] [2KWriting at 0x00007640 [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m 100.0% 16.20kB/16.20kB [0s] 
+[1A[2K[1A[2KWrote 26176 bytes (16586 compressed) at 0x00001000 in 0.8 seconds (252.7 kbit/s).
+Verifying written data...
+[1A[2KHash of data verified.
+
+Writing 'partition_table/partition-table.bin' at 0x00008000...
+Comparing flash contents against new data...
+[1A[2K'partition_table/partition-table.bin' at 0x00008000 already in flash, skipping write.
+
+Writing 'esp32_robot_firmware.bin' at 0x00010000...
+Comparing flash contents against new data...
+[1A[2KFlash will be erased from 0x00010000 to 0x0007ffff...
+Compressed 455296 bytes to 280375...
+[2KWriting at 0x0001c314 [38;2;249;38;114m━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m   5.8% 16.00kB/273.80kB [0s] [2KWriting at 0x000278e7 [38;2;249;38;114m━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m  11.7% 32.00kB/273.80kB [0s] [2KWriting at 0x0002d225 [38;2;249;38;114m━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━[0m  17.5% 48.00kB/273.80kB [1s] [2KWriting at 0x00032d88 [38;2;249;38;114m━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━[0m  23.4% 64.00kB/273.80kB [1s] [2KWriting at 0x0003853b [38;2;249;38;114m━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━[0m  29.2% 80.00kB/273.80kB [2s] [2KWriting at 0x0003e9c1 [38;2;249;38;114m━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━[0m  35.1% 96.00kB/273.80kB [2s] [2KWriting at 0x0004467f [38;2;249;38;114m━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━[0m  40.9% 112.00kB/273.80kB [2s] [2KWriting at 0x0004a181 [38;2;249;38;114m━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━[0m  46.7% 128.00kB/273.80kB [3s] [2KWriting at 0x000501b2 [38;2;249;38;114m━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━[0m  52.6% 144.00kB/273.80kB [3s] [2KWriting at 0x00055d0e [38;2;249;38;114m━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━[0m  58.4% 160.00kB/273.80kB [4s] [2KWriting at 0x0005b646 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━[0m  64.3% 176.00kB/273.80kB [4s] [2KWriting at 0x00061523 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━[0m  70.1% 192.00kB/273.80kB [4s] [2KWriting at 0x00066dbe [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━[0m  76.0% 208.00kB/273.80kB [5s] [2KWriting at 0x0006c7ee [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━[0m  81.8% 224.00kB/273.80kB [5s] [2KWriting at 0x00072a79 [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━[0m  87.7% 240.00kB/273.80kB [6s] [2KWriting at 0x000786dd [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━[0m  93.5% 256.00kB/273.80kB [6s] [2KWriting at 0x0007e50a [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m  99.3% 272.00kB/273.80kB [6s] [2KWriting at 0x0007f280 [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m 100.0% 273.80kB/273.80kB [6s] 
+[1A[2K[1A[2KWrote 455296 bytes (280375 compressed) at 0x00010000 in 7.0 seconds (520.5 kbit/s).
+Verifying written data...
+[1A[2KHash of data verified.
+
+Hard resetting via RTS pin...

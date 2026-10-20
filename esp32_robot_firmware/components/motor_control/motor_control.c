@@ -113,8 +113,8 @@ esp_err_t motor_control_init(void)
         return err;
     }
 
-    motor_enable(false);   // stay disabled until something explicitly enables us
     motor_stop_all();
+    motor_enable(true);   // <--- Enable STBY (GPIO 13 -> 3.3V) on startup
 
     ESP_LOGI(TAG, "motor_control initialized");
     return ESP_OK;

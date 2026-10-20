@@ -37,6 +37,41 @@ if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/Users/katherinejackson/.espressif/tools/xtensa-esp-elf/esp-15.2.0_20251204/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/common/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/controller/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/host/bluedroid/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/host/nimble/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/esp_ble_mesh/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/esp_ble_iso/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/esp_ble_audio/cmake_install.cmake")
+endif()
+
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)

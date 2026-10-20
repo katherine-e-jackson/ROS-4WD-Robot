@@ -96,6 +96,13 @@
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/esp_driver_spi/cmake_install.cmake",
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/esp_gdbstub/cmake_install.cmake",
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/common/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/controller/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/host/bluedroid/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/host/nimble/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/esp_ble_mesh/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/esp_ble_iso/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/bt/esp_ble_audio/cmake_install.cmake",
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/unity/cmake_install.cmake",
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/cmock/cmake_install.cmake",
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/console/cmake_install.cmake",
@@ -170,7 +177,8 @@
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/spiffs/cmake_install.cmake",
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/ulp/cmake_install.cmake",
 		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/main/cmake_install.cmake",
-		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/cmake_install.cmake"
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/motor_control/cmake_install.cmake",
+		"/Users/katherinejackson/Desktop/ROS-4WD-Robot/esp32_robot_firmware/build/esp-idf/ble_control/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
